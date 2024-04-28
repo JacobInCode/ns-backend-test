@@ -1,7 +1,6 @@
 from django.contrib import admin
 from .models import Application
 
-#check suites
 # Optionally customize the admin interface
 class ApplicationAdmin(admin.ModelAdmin):
     list_display = ('id', 'user', 'status', 'created_at', 'waitlist_position')  # Fields to display in the list view
